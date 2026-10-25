@@ -1,0 +1,19 @@
+DRAW.IO + SUBMISSION GUIDE
+
+1. Open https://app.diagrams.net/
+2. Choose Device, then open DFD.drawio.
+3. Inspect/edit the diagram. Save a copy to Google Drive or OneDrive if your instructor requires a public share link.
+4. Set sharing to anyone with the link can view (if your institution permits this).
+5. Repeat for Use_Case_Diagram.drawio.
+6. Copy both public links into Project_Report.docx.
+7. Create a public GitHub repository and upload all project files except generated build folders.
+8. Replace the GitHub placeholder in the report and README if needed.
+9. Keep the source code and report aligned; do not claim features that you have not tested.
+
+RUN:
+- Install JDK 17+ and Maven 3.8+.
+- Open terminal in the folder containing pom.xml.
+- Run: mvn spring-boot:run
+- Browse to http://localhost:8080
+
+NOTE: This package is a newly prepared implementation based on the project concept in the supplied PPT, not the team leader's original code. Test it and confirm your team agrees before submitting it as the team's implementation.

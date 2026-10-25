@@ -1,0 +1,44 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="DFD Level 0" id="0">
+    <mxGraphModel dx="1123" dy="565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="user" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="User / Network Administrator" vertex="1">
+          <mxGeometry height="70" width="270" x="10" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Network Routing &amp; Failure Simulation Engine&#xa;(GUI + Spring Boot)" vertex="1">
+          <mxGeometry height="90" width="250" x="490" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;" value="SQL Database&#xa;Topology, Router, Link, Simulation, Simulation_Result" vertex="1">
+          <mxGeometry height="120" width="240" x="890" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="user" style="endArrow=block;html=1;rounded=0;" target="app" value="Route request / topology event">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="app" style="endArrow=block;html=1;rounded=0;" target="user" value="Route, cost, status">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="285" y="420" />
+              <mxPoint x="120" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="app" style="endArrow=block;html=1;" target="db" value="Read/update topology; save result">
+          <mxGeometry relative="1" x="0.0632" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="db" style="endArrow=block;html=1;" target="app" value="Topology and simulation data">
+          <mxGeometry relative="1" x="0.0005" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="430" />
+              <mxPoint x="650" y="430" />
+              <mxPoint x="470" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
